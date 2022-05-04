@@ -18,7 +18,7 @@ export default function NewsCards({ articles, activeArticle }) {
         )
     }
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
+    <div className='grid grid-cols-1 p-5 md:grid-cols-3 gap-10'>
         {console.log(articles)}
         {articles.map((article,i)=>(
             <Cards data={article} index={i} activeArticle={activeArticle}/>
