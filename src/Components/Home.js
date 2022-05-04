@@ -4,7 +4,6 @@ import NewsCards from './NewsCards';
 import wordsToNumbers from 'words-to-numbers';
 
 const alanKey ='5e7b576d38f95af5229f3c1b0cf712732e956eca572e1d8b807a3e2338fdd0dc/stage';
-const API_KEY='07c449818d16483cbc323636da744118';
 export default function Home() {
 const [newsArticle, setNewsArticle] = useState([]);
 const [activeArticle, setActiveArticle] = useState(-1);
@@ -49,7 +48,7 @@ useEffect(() => {
   return (
     <>
    
-        <div>
+        <div    >
             <div className='flex justify-center items-center font-bold font-serif text-2xl p-10 md:pt-10'>
                 <p className='text-violet-600'>AI NEWS APPLICATION</p> 
             </div>
