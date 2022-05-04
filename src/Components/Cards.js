@@ -22,7 +22,7 @@ export default function Cards({data,index,activeArticle}) {
              <CardSubtitle className='md:text-md text-gray-500'>{data.source.name}</CardSubtitle>
               <CardTitle className='md:text-md text-gray-500 text-right'>{new Date(data.publishedAt).toDateString()}</CardTitle>
           </div>         
-          <CardTitle className='md:text-md md:font-semibold'>{data.title}</CardTitle>      
+          <CardTitle className='md:text-md font-semibold'>{data.title}</CardTitle>      
           <CardText className='pt-3'>{ data.description? (data.description.length>150 ? data.description.substring(0,150) : data.description) : " "}....</CardText>
         </CardBody>
         <CardFooter className='pr-5 pb-2 text-right text-md font-semibold'>{index+1}</CardFooter>
